@@ -1,12 +1,296 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/junior/ontologies/2018/4/untitled-ontology-6#"
-     xml:base="http://www.semanticweb.org/junior/ontologies/2018/4/untitled-ontology-6"
+<rdf:RDF xmlns="http://www.semanticweb.org/junior/ontologies/2018/4/"
+     xml:base="http://www.semanticweb.org/junior/ontologies/2018/4/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/untitled-ontology-6"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/AnchovyTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/AnchovyTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/CaperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/CaperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/CheeseTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/CheeseTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/ThindAndCrispyBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/GreenPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/GreenPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/HamTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/HamTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/JalapenoPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/JalapenoPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/MozzarelaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/MozzarelaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/CheeseTopping"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/ParmezanTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/MushroomTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/MushroomTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/OliveTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/OliveTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/OnionTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/OnionTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/ParmezanTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/ParmezanTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/CheeseTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/PepperoniTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PepperoniTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/Pizza">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/PrawnTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PrawnTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/RedPepperTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/RedPepperTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/SalamiTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SalamiTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/SpicyBeefTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SpicyBeefTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/ThindAndCrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/ThindAndCrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/TomatoTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/TomatoTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/TunaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/TunaTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/AnchovyTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PrawnTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/TunaTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/CaperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/MushroomTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/OliveTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/OnionTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/TomatoTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/CheeseTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/MeatTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SeaFoodTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/VegetableTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/GreenPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/JalapenoPepperTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/RedPepperTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/HamTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/PepperoniTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SalamiTopping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/SpicyBeefTopping"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
