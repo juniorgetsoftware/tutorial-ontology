@@ -69,6 +69,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasTopping">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/Pizza"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
     </owl:ObjectProperty>
     
