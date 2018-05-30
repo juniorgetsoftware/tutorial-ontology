@@ -13,6 +13,39 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
