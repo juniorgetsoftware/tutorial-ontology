@@ -21,6 +21,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/IsBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/junior/ontologies/2018/4/IsToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasTopping"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/junior/ontologies/2018/4/hasBase -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase">
