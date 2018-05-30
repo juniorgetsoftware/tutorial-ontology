@@ -34,6 +34,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -51,13 +52,16 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
     
 
 
