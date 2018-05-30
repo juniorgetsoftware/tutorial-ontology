@@ -26,6 +26,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsBaseOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/Pizza"/>
     </owl:ObjectProperty>
     
 
@@ -44,6 +46,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/IsToppingOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/IsIgrendientOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasTopping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaTopping"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/Pizza"/>
     </owl:ObjectProperty>
     
 
@@ -53,6 +57,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/junior/ontologies/2018/4/hasBase">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/hasIngredient"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/junior/ontologies/2018/4/PizzaBase"/>
     </owl:ObjectProperty>
     
 
